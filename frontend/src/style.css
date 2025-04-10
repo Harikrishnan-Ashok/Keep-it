@@ -1,0 +1,17 @@
+html {
+    background-color: rgba(5, 5, 5, 1);
+    color: white;
+}
+
+body {
+    margin: 0;
+    color: white;
+}
+
+#app {
+    height: 100vh;
+}
+html, body {
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%; /* Ensure full height */
+}
