@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import {useNavigate} from 'react-router-dom';
 import {useState} from 'react';
+import {Divider} from '@mui/material';
 
 export default function Navbar({setShowDrawer}) {
   const navigate=useNavigate()
@@ -37,10 +38,11 @@ export default function Navbar({setShowDrawer}) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Divider flexItem orientation='vertical' ></Divider>
+          <Typography role='button' onClick={()=>navigate("/")}  variant="h6" component="div" sx={{ textAlign:"center",flexGrow: 1,cursor:"pointer" }}>
             Go-Keep
           </Typography>
-          <IconButton 
+          <IconButton
             color="inherit"
             onClick={handleSettingsToggle}
           >
